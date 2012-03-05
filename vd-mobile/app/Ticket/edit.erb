@@ -1,0 +1,36 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <h1>Edit <%= @ticket.human_id %></h1>
+    <a href="<%= url_for :action => :show, :id => @ticket.object %>" class="ui-btn-left" data-icon="back" data-direction="reverse">
+      Cancel
+    </a>
+    <a href="<%= url_for :action => :delete, :id => @ticket.object %>" class="ui-btn-right" data-icon="delete" data-direction="reverse">
+      Delete
+    </a>
+  </div>
+
+  <div data-role="content">
+    <form method="POST" action="<%= url_for :action => :update %>">
+      <input type="hidden" name="id" value="<%= @ticket.object %>"/>
+      
+          <div data-role="fieldcontain">
+            <label for="ticket[human_id]" class="fieldLabel">Human</label>
+            <input type="text" id="ticket[human_id]" name="ticket[human_id]" value="<%= @ticket.human_id %>" <%= placeholder( "Human" ) %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="ticket[human_id_formatted]" class="fieldLabel">Human id formatted</label>
+            <input type="text" id="ticket[human_id_formatted]" name="ticket[human_id_formatted]" value="<%= @ticket.human_id_formatted %>" <%= placeholder( "Human id formatted" ) %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="ticket[subject]" class="fieldLabel">Subject</label>
+            <input type="text" id="ticket[subject]" name="ticket[subject]" value="<%= @ticket.subject %>" <%= placeholder( "Subject" ) %> />
+          </div>
+      
+      <input type="submit" value="Update"/>
+    </form>
+  </div>
+
+</div>

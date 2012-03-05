@@ -1,0 +1,26 @@
+sdk: /Users/karamon/.rvm/gems/ruby-1.9.3-p0@rhodes/gems/rhodes-3.3.3.beta.3
+sdkversion: 3.3.3
+name: vd-mobile
+version: 1.0
+vendor: rhomobile
+build: debug
+bbver: 4.6
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator5.0
+  provisionprofile: 
+  codesignidentity: 
+  entitlements: 
+  BundleIdentifier: com.rhomobile.vd-mobile
+  BundleURLScheme: vd-mobile
+  emulatortarget: iphone
+wp:
+  productid: 13bfcda0-445b-012f-3c69-001f5bc75118
+symbian:
+  uid: 0xed9fa4b8
+android:
+  version: 4.0.3
+extensions:
+  - json
+  - profiler 

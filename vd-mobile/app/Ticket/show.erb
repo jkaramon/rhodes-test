@@ -1,0 +1,34 @@
+<div data-role="page" data-add-back-btn="false">
+
+  <div data-role="header" data-position="inline">
+    <h1><%= @ticket.human_id %></h1>
+    <a href="<%= url_for :action => :index %>" class="ui-btn-left" data-icon="arrow-l" data-direction="reverse">
+      Back
+    </a>
+    <a href="<%= url_for :action => :edit, :id => @ticket.object %>" class="ui-btn-right" data-icon="star">
+      Edit
+    </a>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview">
+      
+          <li>
+            <div class="itemLabel">HumanId</div>
+            <div class="itemValue"><%= @ticket.human_id %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">HumanIdFormatted</div>
+            <div class="itemValue"><%= @ticket.human_id_formatted %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">Subject</div>
+            <div class="itemValue"><%= @ticket.subject %></div>
+          </li>
+      
+    </ul>
+  </div>
+
+</div>

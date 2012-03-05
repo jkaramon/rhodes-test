@@ -1,0 +1,8 @@
+rhodes_path='/Users/karamon/.rvm/gems/ruby-1.9.3-p0@rhodes/gems/rhodes-3.3.3.beta.3'
+app_version='1.0'
+app_name='vd-mobile'
+reload_app_changes=1
+debug_port=
+debug_host='127.0.0.1'
+platform='iphone'
+ext_path=/Users/karamon/.rvm/gems/ruby-1.9.3-p0@rhodes/gems/rhodes-3.3.3.beta.3/lib/extensions/json;/Users/karamon/Projects/rhodes/vd-mobile/extensions/profiler;

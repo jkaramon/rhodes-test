@@ -1,0 +1,30 @@
+<div data-role="page" data-add-back-btn="true">
+
+  <div data-role="header" data-position="inline">
+    <%= link_to "Back", :action => :index %>
+    <h1><%= @ticket.human_id %></h1>
+    <%= link_to "Edit", :action => :edit, :id => @ticket.object %>
+  </div>
+
+  <div data-role="content">
+    <table>
+      
+      <tr>
+    	<td class="itemLabel">HumanId</td>
+        <td class="itemValue"><%= @ticket.human_id%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">HumanIdFormatted</td>
+        <td class="itemValue"><%= @ticket.human_id_formatted%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Subject</td>
+        <td class="itemValue"><%= @ticket.subject%></td>
+      </tr>
+      
+    </table>
+  </div>
+
+</div>
